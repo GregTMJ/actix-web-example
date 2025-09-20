@@ -1,0 +1,42 @@
+{
+    "hash_passport": {
+        "hash_value": "ea57803100aae74f245cec933c337c7029817becc891957d6f61256d7212be17",
+        "count": 1,
+        "country": "RUS",
+        "iteration_id": 30,
+        "timestamptz_saved": "2025-08-11T09:47:34.428912Z",
+        "date": "2019-07-17T21:00:00"
+    },
+    "hash_snils": {
+        "hash_value": "a613298afa99b022ec26614513649e6381e5a0c441c4d7c1bbecc1983630d3be",
+        "count": 1,
+        "country": "RUS",
+        "iteration_id": 31,
+        "timestamptz_saved": "2025-08-11T09:47:37.950781Z",
+        "date": "2019-11-13T10:16:45"
+    },
+    "inn": {
+        "inn": "7765890871",
+        "count": 1,
+        "country": "RUS",
+        "iteration_id": 32,
+        "timestamptz_saved": "2025-08-11T09:47:38.388018Z",
+        "date": "2019-11-16T12:42:03"
+    },
+    "phone_number": {
+        "phone_number": "79512602842",
+        "count": 2,
+        "country": "RUS",
+        "iteration_id": 33,
+        "timestamptz_saved": "2025-08-11T09:47:38.926591Z",
+        "date": "2019-08-17T12:24:01"
+    },
+    "card_number": {
+        "card_number": "5570735988888888",
+        "count": 3,
+        "country": "RUS",
+        "iteration_id": 34,
+        "timestamptz_saved": "2025-08-11T09:47:39.513019Z",
+        "date": "2019-11-09T13:41:46"
+    }
+}

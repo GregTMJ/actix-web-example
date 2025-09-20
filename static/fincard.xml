@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results request_id="1" processing_code="1000">
+  <file name="request_1700341495259_req.xml">
+    <check_hash answer="Not found" />
+    <xsd answer="No errors" />
+    <response>
+      <person record_id="1">
+        <rules>
+          <rule rule_id="1" level_1="M" level_2="M1" level_3="" rule_name="cardFound"
+            data_record_id="1" rule_flag="1" rule_value="true" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="2" level_1="M" level_2="M17" level_3="" rule_name="transfersFromMFO"
+            data_record_id="1" rule_flag="1" rule_value="true" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="3" level_1="M" level_2="M5" level_3="" rule_name="firstTransferFromMFODate"
+            data_record_id="1" rule_flag="1" rule_value="2019.11.01" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="4" level_1="M" level_2="M10" level_3="" rule_name="lastTransferFromMFODate"
+            data_record_id="1" rule_flag="1" rule_value="2021.04.28" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="5" level_1="M" level_2="M13" level_3="" rule_name="mfoCountFor180Days"
+            data_record_id="1" rule_flag="1" rule_value="0" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="6" level_1="M" level_2="M12" level_3="" rule_name="mfoCountFor90Days"
+            data_record_id="1" rule_flag="1" rule_value="0" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="7" level_1="M" level_2="M11" level_3="" rule_name="mfoCountFor30Days"
+            data_record_id="1" rule_flag="1" rule_value="0" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="8" level_1="M" level_2="M15" level_3="" rule_name="totalIssuedAmount"
+            data_record_id="1" rule_flag="1" rule_value="59593" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="9" level_1="M" level_2="M14" level_3="" rule_name="totalDischargeAmount"
+            data_record_id="1" rule_flag="1" rule_value="34907.14" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="10" level_1="M" level_2="M16" level_3="" rule_name="totalRecurrentAmount"
+            data_record_id="1" rule_flag="1" rule_value="0" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="11" level_1="M" level_2="M6" level_3="" rule_name="lastDischargeAmount"
+            data_record_id="1" rule_flag="1" rule_value="2550" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="12" level_1="M" level_2="M7" level_3="" rule_name="lastDischargeDate"
+            data_record_id="1" rule_flag="1" rule_value="2021.05.27" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="13" level_1="M" level_2="M2" level_3="" rule_name="countIssuedFor30Days"
+            data_record_id="1" rule_flag="1" rule_value="0" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="14" level_1="M" level_2="M3" level_3="" rule_name="countIssuedFor90Days"
+            data_record_id="1" rule_flag="1" rule_value="0" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="15" level_1="M" level_2="M4" level_3="" rule_name="countIssuedFor180Days"
+            data_record_id="1" rule_flag="1" rule_value="0" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="16" level_1="M" level_2="M11" level_3=""
+            rule_name="lastSuccessfulDischargeDate" data_record_id="1" rule_flag="1"
+            rule_value="2021.05.27" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="17" level_1="M" level_2="M8" level_3=""
+            rule_name="lastSuccessfulDischargeAmount" data_record_id="1" rule_flag="1"
+            rule_value="2550" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="18" level_1="M" level_2="M18" level_3="" rule_name="mfoIssuedFor30Days"
+            data_record_id="1" rule_flag="1" rule_value="0" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="19" level_1="M" level_2="M19" level_3="" rule_name="mfoIssuedFor90Days"
+            data_record_id="1" rule_flag="1" rule_value="0" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="20" level_1="M" level_2="M20" level_3="" rule_name="mfoIssuedFor180Days"
+            data_record_id="1" rule_flag="1" rule_value="0" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="21" level_1="M" level_2="M7" level_3="" rule_name="lastRecurrentAmount"
+            data_record_id="1" rule_flag="0" rule_value="" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="22" level_1="M" level_2="M9" level_3="" rule_name="lastRecurrentDate"
+            data_record_id="1" rule_flag="0" rule_value="" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="23" level_1="M" level_2="M9" level_3=""
+            rule_name="lastSuccessfulRecurrentAmount" data_record_id="1" rule_flag="0" rule_value=""
+            rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="24" level_1="M" level_2="M13" level_3=""
+            rule_name="lastSuccessfulRecurrentDate" data_record_id="1" rule_flag="0" rule_value=""
+            rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="25" level_1="A" level_2="A1" level_3="" rule_name="SA" data_record_id=""
+            rule_flag="1" rule_value="2" rule_date="2023-10-25 00:00:00" />
+          <rule rule_id="26" level_1="M" level_2="M49" level_3="M49.3" rule_name="CntCardPassport90"
+            data_record_id="1" rule_flag="1" rule_value="2" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="27" level_1="M" level_2="M49" level_3="M49.4"
+            rule_name="CntCardPassport180" data_record_id="1" rule_flag="1" rule_value="2"
+            rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="28" level_1="M" level_2="M49" level_3="M49.1" rule_name="CntCardPassport30"
+            data_record_id="1" rule_flag="1" rule_value="2" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="29" level_1="M" level_2="M49" level_3="M49.2" rule_name="CntCardPassport60"
+            data_record_id="1" rule_flag="1" rule_value="2" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="30" level_1="M" level_2="M21" level_3="M21.1" rule_name="CntCardUsers30"
+            data_record_id="1" rule_flag="1" rule_value="2" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="31" level_1="M" level_2="M21" level_3="M21.2" rule_name="CntCardUsers60"
+            data_record_id="1" rule_flag="1" rule_value="2" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="32" level_1="M" level_2="M21" level_3="M21.3" rule_name="CntCardUsers90"
+            data_record_id="1" rule_flag="1" rule_value="2" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="33" level_1="M" level_2="M21" level_3="M21.4" rule_name="CntCardUsers180"
+            data_record_id="1" rule_flag="1" rule_value="2" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="34" level_1="M" level_2="M21" level_3="" rule_name="cntcardusers"
+            data_record_id="1" rule_flag="1" rule_value="2" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="35" level_1="M" level_2="M36" level_3="" rule_name="cntallcardsusers"
+            data_record_id="" rule_flag="1" rule_value="5" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="36" level_1="M" level_2="M37" level_3="" rule_name="CntCardUser_SameAp"
+            data_record_id="" rule_flag="1" rule_value="1" rule_date="2023-06-27 00:00:00" />
+          <rule rule_id="37" level_1="M" level_2="M38" level_3="" rule_name="FirstDateUseCardSA"
+            data_record_id="1" rule_flag="1" rule_value="27.06.2023" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="38" level_1="M" level_2="M49" level_3="" rule_name="cntcardpassport"
+            data_record_id="1" rule_flag="1" rule_value="2" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="39" level_1="M" level_2="M50" level_3="" rule_name="cntTINcard"
+            data_record_id="1" rule_flag="1" rule_value="1" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="40" level_1="M" level_2="M51" level_3="" rule_name="cntallcardsTIN"
+            data_record_id="" rule_flag="1" rule_value="4" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="41" level_1="A" level_2="A4" level_3="" rule_name="Num_Req_All"
+            data_record_id="" rule_flag="1" rule_value="12" rule_date="2023-10-25 00:00:00" />
+          <rule rule_id="42" level_1="A" level_2="DFP" level_3="DFP_du"
+            rule_name="CntAllDevicesUser" data_record_id="0" rule_flag="1" rule_value="0"
+            rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="43" level_1="A" level_2="DFP" level_3="DFP_dc"
+            rule_name="CntAllDevicesCard" data_record_id="1" rule_flag="1" rule_value="1"
+            rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="44" level_1="A" level_2="DFP" level_3="DFP_Ph_7"
+            rule_name="CntAllDevicesPhone_7" data_record_id="1" rule_flag="1" rule_value="0"
+            rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="45" level_1="A" level_2="DFP" level_3="DFP_Ph_30"
+            rule_name="CntAllDevicesPhone_30" data_record_id="1" rule_flag="1" rule_value="0"
+            rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="46" level_1="A" level_2="DFP" level_3="DFP_Ph_90"
+            rule_name="CntAllDevicesPhone_90" data_record_id="1" rule_flag="1" rule_value="0"
+            rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="47" level_1="A" level_2="DFP" level_3="DFP_Ph_180"
+            rule_name="CntAllDevicesPhone_180" data_record_id="1" rule_flag="1" rule_value="0"
+            rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="48" level_1="A" level_2="DFP" level_3="DFP_Ph_all"
+            rule_name="CntAllDevicesPhone_all" data_record_id="1" rule_flag="1" rule_value="0"
+            rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="49" level_1="M" level_2="M55" level_3="IP_3" rule_name="cntUserAplIP"
+            data_record_id="" rule_flag="1" rule_value="0" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="50" level_1="M" level_2="M55" level_3="IP_2"
+            rule_name="FirstDateUseIpNetSA" data_record_id="" rule_flag="0" rule_value=""
+            rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="51" level_1="M" level_2="M55" level_3="IP_1_365"
+            rule_name="CntallIpNetsUser365" data_record_id="" rule_flag="1" rule_value="1"
+            rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="52" level_1="M" level_2="M55" level_3="IP_1_180"
+            rule_name="CntallIpNetsUser180" data_record_id="" rule_flag="1" rule_value="1"
+            rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="53" level_1="M" level_2="M55" level_3="IP_1_30"
+            rule_name="CntallIpNetsUser30" data_record_id="" rule_flag="1" rule_value="0"
+            rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="54" level_1="M" level_2="M54" level_3="" rule_name="CntPhoneUser_SameAp"
+            data_record_id="1" rule_flag="1" rule_value="7" rule_date="2023-10-25 00:00:00" />
+          <rule rule_id="55" level_1="A" level_2="A4" level_3="A4.2_14" rule_name="NumR_DIL_14"
+            data_record_id="" rule_flag="0" rule_value="0" rule_date="" />
+          <rule rule_id="56" level_1="A" level_2="A4" level_3="A4.2_7" rule_name="NumR_DIL_7"
+            data_record_id="" rule_flag="0" rule_value="0" rule_date="" />
+          <rule rule_id="57" level_1="A" level_2="A4" level_3="A4.2_3" rule_name="NumR_DIL_3"
+            data_record_id="" rule_flag="0" rule_value="0" rule_date="" />
+          <rule rule_id="58" level_1="M" level_2="M53" level_3="" rule_name="CntAllPhonesTIN"
+            data_record_id="" rule_flag="1" rule_value="1" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="59" level_1="M" level_2="M52" level_3="" rule_name="CntAllTINUsers"
+            data_record_id="" rule_flag="1" rule_value="1" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="60" level_1="M" level_2="M48" level_3="" rule_name="CntAllPassportsUsers"
+            data_record_id="" rule_flag="1" rule_value="1" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="61" level_1="M" level_2="M39" level_3="" rule_name="CntAllPhonesUsers"
+            data_record_id="" rule_flag="1" rule_value="5" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="62" level_1="A" level_2="A1" level_3="A1.1" rule_name="FirstDateSA"
+            data_record_id="" rule_flag="1" rule_value="27.06.2023" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="63" level_1="I" level_2="I4" level_3="" rule_name="FirstDateUsePhoneSA"
+            data_record_id="1" rule_flag="1" rule_value="27.06.2023" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="64" level_1="M" level_2="M23" level_3="M23.6" rule_name="NumCrdPhone_360"
+            data_record_id="1" rule_flag="1" rule_value="5" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="65" level_1="M" level_2="M23" level_3="M23.5" rule_name="NumCrdPhone_180"
+            data_record_id="1" rule_flag="1" rule_value="5" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="66" level_1="M" level_2="M23" level_3="M23.4" rule_name="NumCrdPhone_120"
+            data_record_id="1" rule_flag="1" rule_value="5" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="67" level_1="M" level_2="M23" level_3="M23.3" rule_name="NumCrdPhone_90"
+            data_record_id="1" rule_flag="1" rule_value="1" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="68" level_1="M" level_2="M23" level_3="M23.2" rule_name="NumCrdPhone_60"
+            data_record_id="1" rule_flag="1" rule_value="1" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="69" level_1="M" level_2="M23" level_3="M23.1" rule_name="NumCrdPhone_30"
+            data_record_id="1" rule_flag="1" rule_value="1" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="70" level_1="M" level_2="M23" level_3="" rule_name="NumCrdPhone_all"
+            data_record_id="1" rule_flag="1" rule_value="5" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="71" level_1="I" level_2="I3" level_3="I3.6" rule_name="Num_cellph_SP_360"
+            data_record_id="1" rule_flag="1" rule_value="3" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="72" level_1="I" level_2="I3" level_3="I3.5" rule_name="Num_cellph_SP_180"
+            data_record_id="1" rule_flag="1" rule_value="3" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="73" level_1="I" level_2="I3" level_3="I3.4" rule_name="Num_cellph_SP_120"
+            data_record_id="1" rule_flag="1" rule_value="3" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="74" level_1="I" level_2="I3" level_3="I3.3" rule_name="Num_cellph_SP_90"
+            data_record_id="1" rule_flag="1" rule_value="1" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="75" level_1="I" level_2="I3" level_3="I3.2" rule_name="Num_cellph_SP_60"
+            data_record_id="1" rule_flag="1" rule_value="1" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="76" level_1="I" level_2="I3" level_3="I3.1" rule_name="Num_cellph_SP_30"
+            data_record_id="1" rule_flag="1" rule_value="1" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="77" level_1="I" level_2="I3" level_3="" rule_name="Num_cellph_SP_all"
+            data_record_id="1" rule_flag="1" rule_value="3" rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="78" level_1="A" level_2="A4" level_3="A4.2_all" rule_name="NumR_DIL_all"
+            data_record_id="" rule_flag="1" rule_value="12" rule_date="2023-10-25 00:00:00" />
+          <rule rule_id="79" level_1="A" level_2="A4" level_3="A4.2_90" rule_name="NumR_DIL_90"
+            data_record_id="" rule_flag="1" rule_value="2" rule_date="2023-10-25 00:00:00" />
+          <rule rule_id="80" level_1="A" level_2="A4" level_3="A4.2_60" rule_name="NumR_DIL_60"
+            data_record_id="" rule_flag="1" rule_value="1" rule_date="2023-10-25 00:00:00" />
+          <rule rule_id="81" level_1="A" level_2="A4" level_3="A4.2_360" rule_name="NumR_DIL_360"
+            data_record_id="" rule_flag="1" rule_value="12" rule_date="2023-10-25 00:00:00" />
+          <rule rule_id="82" level_1="A" level_2="A4" level_3="A4.2_30" rule_name="NumR_DIL_30"
+            data_record_id="" rule_flag="1" rule_value="1" rule_date="2023-10-25 00:00:00" />
+          <rule rule_id="83" level_1="A" level_2="A4" level_3="A4.2_180" rule_name="NumR_DIL_180"
+            data_record_id="" rule_flag="1" rule_value="12" rule_date="2023-10-25 00:00:00" />
+          <rule rule_id="84" level_1="A" level_2="A4" level_3="A4.2_120" rule_name="NumR_DIL_120"
+            data_record_id="" rule_flag="1" rule_value="4" rule_date="2023-10-25 00:00:00" />
+          <rule rule_id="85" level_1="S" level_2="AS" level_3="FKS_2"
+            rule_name="FinKartaScoreV2_rate" data_record_id="1" rule_flag="1" rule_value="0.01063"
+            rule_date="2023-11-19 00:00:00" />
+          <rule rule_id="86" level_1="S" level_2="AS" level_3="FKS_3"
+            rule_name="FinKartaScoreV3_rate" data_record_id="1" rule_flag="1" rule_value="0.37380"
+            rule_date="2023-11-19 00:00:00" />
+        </rules>
+      </person>
+    </response>
+  </file>
+</results>

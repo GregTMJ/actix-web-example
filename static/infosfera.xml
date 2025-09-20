@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Response id="280862588" status="1" datetime="2024-04-04T16:45:12"
+    result="https://i-sphere.ru/2.00/showresult.php?id=280862588&amp;mode=xml"
+    view="https://i-sphere.ru/2.00/showresult.php?id=280862588">
+    <Request>
+        <UserID>bistrodengi_test</UserID>
+        <requestDateTime>2024-04-04T16:45:11</requestDateTime>
+        <sources>getcontact,numbuster,mailru_email</sources>
+        <requestId>36c42fc2-2094-49ba-8141-46ec88059338</requestId>
+        <PersonReq>
+            <first>&#1040;&#1083;&#1077;&#1082;&#1089;&#1072;&#1085;&#1076;&#1088;</first>
+            <middle>
+                &#1040;&#1083;&#1077;&#1082;&#1089;&#1072;&#1085;&#1076;&#1088;&#1086;&#1074;&#1080;&#1095;</middle>
+            <paternal>&#1051;&#1102;&#1073;&#1080;&#1084;&#1086;&#1074;</paternal>
+            <birthDt>1987-04-16</birthDt>
+            <passport_series>8006</passport_series>
+            <passport_number>153841</passport_number>
+            <issueDate>2007-06-08</issueDate>
+            <issueAuthority>&#1054;&#1058;&#1044;&#1045;&#1051;&#1045;&#1053;&#1048;&#1045;&#1052;
+                &#1059;&#1060;&#1052;&#1057; &#1056;&#1054;&#1057;&#1057;&#1048;&#1048;
+                &#1055;&#1054; &#1056;&#1045;&#1057;&#1055;.
+                &#1041;&#1040;&#1064;&#1050;&#1054;&#1056;&#1058;&#1054;&#1057;&#1058;&#1040;&#1053;
+                &#1042; &#1043;. &#1041;&#1048;&#1056;&#1057;&#1050;</issueAuthority>
+        </PersonReq>
+        <PhoneReq>
+            <phone>79033106430</phone>
+        </PhoneReq>
+        <EmailReq>
+            <email>testov@mail.ru</email>
+        </EmailReq>
+        <IPReq>
+            <ip>10.29.243</ip>
+        </IPReq>
+    </Request>
+    <Source code="getcontact" checktype="getcontact_phone" start="phone[0]" param="phone[0]"
+        path="phone[0]" level="0" index="0"
+        request_id="getcontact_phone_36c42fc2-2094-49ba-8141-46ec88059338_0" process_time="0.69">
+        <Name>GetContact</Name>
+        <Title>Поиск в GetContact</Title>
+        <CheckTitle>Поиск в GetContact</CheckTitle>
+        <Request>getcontact_phone 79033109999</Request>
+        <ResultsCount>1</ResultsCount>
+        <Record>
+            <Field>
+                <FieldType>string</FieldType>
+                <FieldName>Name</FieldName>
+                <FieldTitle>Имя</FieldTitle>
+                <FieldDescription>Имя</FieldDescription>
+                <FieldValue>Любимов</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>string</FieldType>
+                <FieldName>IsUser</FieldName>
+                <FieldTitle>Пользователь GetContact</FieldTitle>
+                <FieldDescription>Пользователь GetContact</FieldDescription>
+                <FieldValue>Нет</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>string</FieldType>
+                <FieldName>TagsCount</FieldName>
+                <FieldTitle>Количество тегов</FieldTitle>
+                <FieldDescription>Количество тегов</FieldDescription>
+                <FieldValue>52</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>string</FieldType>
+                <FieldName>DeletedTagsCount</FieldName>
+                <FieldTitle>Количество удаленных тегов</FieldTitle>
+                <FieldDescription>Количество удаленных тегов</FieldDescription>
+                <FieldValue>0</FieldValue>
+            </Field>
+        </Record>
+    </Source>
+
+    <Source code="mailru" checktype="mailru_email" start="email[0]" param="email[0]" path="email[0]"
+        level="0" index="0" request_id="mailru_email_36c42fc2-2094-49ba-8141-46ec88059338_0"
+        process_time="0.67">
+        <Name>MailRu</Name>
+        <Title>Поиск в Mail.Ru</Title>
+        <CheckTitle>Mail.Ru - поиск по email</CheckTitle>
+        <Request>mailru_email testov@mail.ru</Request>
+        <ResultsCount>1</ResultsCount>
+        <Record>
+            <Field>
+                <FieldType>image</FieldType>
+                <FieldName>Avatar</FieldName>
+                <FieldTitle>Аватар</FieldTitle>
+                <FieldDescription>Аватар</FieldDescription>
+                <FieldValue>https://i-sphere.ru/2.00/logs/mailru/sanyshlyubimov_at_mail.ru.jpg</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>url</FieldType>
+                <FieldName>Link</FieldName>
+                <FieldTitle>Ссылка</FieldTitle>
+                <FieldDescription>Ссылка на страницу в соцсети</FieldDescription>
+                <FieldValue>https://my.mail.ru/mail/sanyshlyubimov/</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>string</FieldType>
+                <FieldName>Phone</FieldName>
+                <FieldTitle>Телефон</FieldTitle>
+                <FieldDescription>Телефон</FieldDescription>
+                <FieldValue>+79033******</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>string</FieldType>
+                <FieldName>Mobile</FieldName>
+                <FieldTitle>Мобильное приложение</FieldTitle>
+                <FieldDescription>Мобильное приложение</FieldDescription>
+                <FieldValue>Да</FieldValue>
+            </Field>
+        </Record>
+    </Source>
+
+    <Source code="numbuster" checktype="numbuster_phone" start="phone[0]" param="phone[0]"
+        path="phone[0]" level="0" index="0"
+        request_id="numbuster_phone_36c42fc2-2094-49ba-8141-46ec88059338_0" process_time="1.21">
+        <Name>NumBuster</Name>
+        <Title>Поиск телефона в NumBuster</Title>
+        <CheckTitle>Поиск телефона в NumBuster</CheckTitle>
+        <Request>numbuster_phone 79033109999</Request>
+        <ResultsCount>1</ResultsCount>
+        <Record>
+            <Field>
+                <FieldType>string</FieldType>
+                <FieldName>phone</FieldName>
+                <FieldTitle>Телефон</FieldTitle>
+                <FieldDescription>Телефон</FieldDescription>
+                <FieldValue>79033106430</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>string</FieldType>
+                <FieldName>name</FieldName>
+                <FieldTitle>Полное имя</FieldTitle>
+                <FieldDescription>Полное имя</FieldDescription>
+                <FieldValue>Саня Любимов</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>string</FieldType>
+                <FieldName>first_name</FieldName>
+                <FieldTitle>Имя</FieldTitle>
+                <FieldDescription>Имя</FieldDescription>
+                <FieldValue>Саня</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>string</FieldType>
+                <FieldName>last_name</FieldName>
+                <FieldTitle>Фамилия</FieldTitle>
+                <FieldDescription>Фамилия</FieldDescription>
+                <FieldValue>Любимов</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>float</FieldType>
+                <FieldName>index</FieldName>
+                <FieldTitle>Индекс</FieldTitle>
+                <FieldDescription>Индекс</FieldDescription>
+                <FieldValue>5.01</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>string</FieldType>
+                <FieldName>region</FieldName>
+                <FieldTitle>Регион</FieldTitle>
+                <FieldDescription>Регион</FieldDescription>
+                <FieldValue>Россия, Республика Башкортостан</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>string</FieldType>
+                <FieldName>operator</FieldName>
+                <FieldTitle>Оператор</FieldTitle>
+                <FieldDescription>Оператор</FieldDescription>
+                <FieldValue>BeeLine</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>string</FieldType>
+                <FieldName>is_install_app</FieldName>
+                <FieldTitle>Установлено приложение Numbuster</FieldTitle>
+                <FieldDescription>Установлено приложение Numbuster</FieldDescription>
+                <FieldValue>Нет</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>string</FieldType>
+                <FieldName>IsHidden</FieldName>
+                <FieldTitle>Скрыт</FieldTitle>
+                <FieldDescription>Скрыт</FieldDescription>
+                <FieldValue>Нет</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>string</FieldType>
+                <FieldName>IsVerified</FieldName>
+                <FieldTitle>Проверен</FieldTitle>
+                <FieldDescription>Проверен</FieldDescription>
+                <FieldValue>Нет</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>string</FieldType>
+                <FieldName>is_banned</FieldName>
+                <FieldTitle>Забанен</FieldTitle>
+                <FieldDescription>Забанен</FieldDescription>
+                <FieldValue>Нет</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>string</FieldType>
+                <FieldName>IsUnwanted</FieldName>
+                <FieldTitle>Нежелательный</FieldTitle>
+                <FieldDescription>Нежелательный</FieldDescription>
+                <FieldValue>Нет</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>string</FieldType>
+                <FieldName>is_pro</FieldName>
+                <FieldTitle>Имеет подписку Pro</FieldTitle>
+                <FieldDescription>Имеет подписку Pro</FieldDescription>
+                <FieldValue>Нет</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>text</FieldType>
+                <FieldName>emotags</FieldName>
+                <FieldTitle>Реакции пользователей</FieldTitle>
+                <FieldDescription>Реакции пользователей</FieldDescription>
+                <FieldValue>"Полезный" - 3
+                    "Нравится" - 3
+</FieldValue>
+            </Field>
+            <Field>
+                <FieldType>string</FieldType>
+                <FieldName>Type</FieldName>
+                <FieldTitle>Тип записи</FieldTitle>
+                <FieldDescription>Тип записи</FieldDescription>
+                <FieldValue>profile</FieldValue>
+            </Field>
+        </Record>
+    </Source>
+</Response>

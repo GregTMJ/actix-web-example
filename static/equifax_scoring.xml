@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bki_response version="4.0" partnerid="3XL" datetime="09.09.2024 11:50:38">
+	<response num="9918" dateofreport="09.09.2024" report_type="1234578566">
+		<responsecode>1</responsecode>
+		<responsestring>Заёмщик найден</responsestring>
+		<title_part>
+			<private>
+				<name>
+					<last>Пдл</last>
+					<first>Тестов</first>
+					<middle>Серазоновин</middle>
+					<extra_data id="7" value="08.09.2024" />
+				</name>
+				<doc>
+					<country>643</country>
+					<type>21</type>
+					<serial>1234</serial>
+					<number>567890</number>
+					<date>13.06.2015</date>
+					<who>ОТДЕЛЕНИЕМ УФМС РОССИИ ПО КРАСНОЯРСКОМУ КРАЮ В УЖУРСКОМ Р-НЕ</who>
+					<department_code>240-034</department_code>
+					<end_date>-</end_date>
+					<extra_data id="7" value="08.09.2024" />
+				</doc>
+				<birth>
+					<date>17.05.1995</date>
+					<country>643</country>
+					<place>ГОР.УЖУР КРАСНОЯРСКОГО КРАЯ</place>
+				</birth>
+				<history>
+					<name>
+						<hist_name_sign>0</hist_name_sign>
+					</name>
+					<doc>
+						<hist_doc_sign>1</hist_doc_sign>
+						<country>643</country>
+						<type>21</type>
+						<serial>1234</serial>
+						<number>567890</number>
+						<date>13.06.2015</date>
+						<who>ОУФМС РФ ПО КРАСНОЯРСКОМУ КРАЮ В УЖУРСКОМ Р-НЕ</who>
+						<department_code>999-999</department_code>
+						<end_date>-</end_date>
+						<extra_data id="7" value="11.08.2024" />
+					</doc>
+					<doc>
+						<hist_doc_sign>1</hist_doc_sign>
+						<country>643</country>
+						<type>21</type>
+						<serial>1234</serial>
+						<number>567890</number>
+						<date>20.08.2010</date>
+						<department_code>240-034</department_code>
+						<end_date>-</end_date>
+						<extra_data id="7" value="13.04.2024" />
+					</doc>
+				</history>
+				<inn>
+					<code>1</code>
+					<no>243905454230</no>
+					<special_tax_mode>0</special_tax_mode>
+					<extra_data id="7" value="06.09.2024" />
+				</inn>
+				<snils>
+					<no>15520795060</no>
+					<extra_data id="7" value="08.09.2024" />
+				</snils>
+			</private>
+		</title_part>
+		<base_part>
+			<scoring>
+				<scor_date>09.09.2024</scor_date>
+				<scor_card_id>71</scor_card_id>
+				<scor_name>Скоринговая модель МФО - PDL: Новые клиенты</scor_name>
+				<score>600</score>
+			</scoring>
+		</base_part>
+	</response>
+</bki_response>
