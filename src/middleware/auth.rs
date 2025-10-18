@@ -21,34 +21,32 @@ pub async fn extract_auth_key(
                 HttpResponse::build(StatusCode::INTERNAL_SERVER_ERROR)
                     .content_type("application/json")
                     .json(ApiError::new(
-                        msg.to_string(),
+                        &msg.to_string(),
                         CustomStatusCode::InternalError,
                     )),
             ));
         }
     };
+    let api_error: ApiError;
     match req.headers().get("X-Api-Key") {
         Some(val) => {
             if val.to_owned() == system_api_key {
-                next.call(req).await
+                return next.call(req).await;
             } else {
-                Ok(req.into_response(
-                    HttpResponse::build(StatusCode::UNAUTHORIZED)
-                        .content_type("application/json")
-                        .json(ApiError::new(
-                            "Api key did not match".to_string(),
-                            CustomStatusCode::Unauthorized,
-                        )),
-                ))
+                api_error = ApiError::new(
+                    "Api key did not match",
+                    CustomStatusCode::Unauthorized,
+                );
             }
         }
-        None => Ok(req.into_response(
-            HttpResponse::build(StatusCode::UNAUTHORIZED)
-                .content_type("application/json")
-                .json(ApiError::new(
-                    "Api key missing".to_string(),
-                    CustomStatusCode::Unauthorized,
-                )),
-        )),
+        None => {
+            api_error =
+                ApiError::new("Api key is missing", CustomStatusCode::Unauthorized);
+        }
     }
+    Ok(req.into_response(
+        HttpResponse::build(StatusCode::UNAUTHORIZED)
+            .content_type("application/json")
+            .json(api_error),
+    ))
 }

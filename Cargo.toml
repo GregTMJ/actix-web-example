@@ -1,11 +1,17 @@
 [package]
 name = "mockservice"
-version = "1.2.3"
+version = "1.2.4"
 edition = "2024"
+authors = ["Gregory Saliba", "gregtmj@gmail.com"]
+description = "This project is meant to handle a mock service, that imitates responses from external services"
+readme = "README.md"
+repository = "https://github.com/GregTMJ/actix-web-example"
+license-file = "LICENSE"
+publish = false
 
 [dependencies]
 actix-web = "4.11.0"
-tokio = {version = "1", features = ["fs", "macros", "rt-multi-thread"] }
+tokio = {version = "1", features = ["full"] }
 dotenv = "0.15"
 sqlx = { version = "0.8", features = [ "runtime-tokio", "postgres", "derive" ] }
 serde = "1.0.219"
@@ -22,8 +28,8 @@ path = "src/bin/main.rs"
 name = "mockservice"
 
 [profile.dev]
-codegen-units = 16  # Increase parallel compilation
-incremental = true   # Enable incremental compilation
+codegen-units = 16
+incremental = true
 
 [build]
 jobs = 2

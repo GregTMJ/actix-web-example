@@ -46,7 +46,7 @@ pub async fn mock_fetch_file_response(
         Err(err) => Err(HttpResponse::build(StatusCode::INTERNAL_SERVER_ERROR)
             .content_type("application/json")
             .json(ApiError::new(
-                err.to_string(),
+                &err.to_string(),
                 CustomStatusCode::ErrorConflict,
             ))),
     }

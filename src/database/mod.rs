@@ -13,13 +13,17 @@ use crate::helpers::errors::{ApiError, StatusCode as CustomStatusCode};
 pub mod models;
 
 pub async fn check_connection() -> Result<(), SqlError> {
-    let database_url = env::var("DATABASE_URL").expect("DATABASE_URL must be set for work");
+    let database_url =
+        env::var("DATABASE_URL").expect("DATABASE_URL must be set for work");
     PgConnection::connect(&database_url).await?;
     Ok(())
 }
 
-pub async fn get_connection_pool(max_connection: u32) -> Result<Pool<Postgres>, SqlError> {
-    let database_url = env::var("DATABASE_URL").expect("DATABASE_URL must be set for work");
+pub async fn get_connection_pool(
+    max_connection: u32
+) -> Result<Pool<Postgres>, SqlError> {
+    let database_url =
+        env::var("DATABASE_URL").expect("DATABASE_URL must be set for work");
     PgPoolOptions::new()
         .max_connections(max_connection)
         .connect(&database_url)
@@ -46,7 +50,7 @@ pub async fn fetch_mock_response(
             _ => Err(HttpResponse::build(StatusCode::INTERNAL_SERVER_ERROR)
                 .content_type("application/json")
                 .json(ApiError::new(
-                    error.to_string(),
+                    &error.to_string(),
                     CustomStatusCode::DatabaseError,
                 ))),
         },

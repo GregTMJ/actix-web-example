@@ -17,7 +17,13 @@ pub struct ApiError {
 }
 
 impl ApiError {
-    pub fn new(message: String, code: StatusCode) -> Self {
-        Self { message, code }
+    pub fn new(
+        message: &str,
+        code: StatusCode,
+    ) -> Self {
+        Self {
+            message: message.to_owned(),
+            code,
+        }
     }
 }

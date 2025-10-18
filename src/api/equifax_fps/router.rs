@@ -11,7 +11,13 @@ async fn get_equifax_fps_info(
     input_info: web::Json<PublicInfoRequest>,
 ) -> actix_web::Result<impl Responder> {
     let path = get_file_path("equifax_fps.xml")?;
-    match mock_fetch_file_response(pool.get_ref(), input_info.into_inner(), SERVICE_ID, path).await
+    match mock_fetch_file_response(
+        pool.get_ref(),
+        input_info.into_inner(),
+        SERVICE_ID,
+        path,
+    )
+    .await
     {
         Ok(val) => Ok(HttpResponse::Ok()
             .content_type("text/plain; charset=utf-8")

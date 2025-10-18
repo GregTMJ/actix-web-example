@@ -1,4 +1,5 @@
 use std::env;
+use std::io;
 
 use actix_web::middleware::from_fn;
 use actix_web::{App, HttpResponse, HttpServer, Responder, get, middleware, web};
@@ -22,7 +23,7 @@ async fn check_ping() -> impl Responder {
 }
 
 #[actix_web::main]
-async fn main() -> std::io::Result<()> {
+async fn main() -> io::Result<()> {
     dotenv().ok();
     init_from_env(Env::default().default_filter_or("info"));
     check_connection().await.unwrap();
@@ -40,7 +41,9 @@ async fn main() -> std::io::Result<()> {
         },
         Err(_) => 1,
     };
-    let pool = get_connection_pool(max_connections).await.unwrap();
+    let pool = get_connection_pool(max_connections)
+        .await
+        .expect("Database connection error");
     HttpServer::new(move || {
         App::new()
             .wrap(from_fn(extract_auth_key))

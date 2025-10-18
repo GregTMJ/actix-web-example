@@ -2,7 +2,7 @@ use actix_web::{
     HttpResponse, Responder,
     http::StatusCode,
     post,
-    web::{self, Bytes},
+    web::{Bytes, Data, Path},
 };
 use serde_json::json;
 use sqlx::{Pool, Postgres};
@@ -15,8 +15,8 @@ use crate::{
 
 #[post("/mock_response/{service_id}/{data_hash}")]
 async fn add_mock_response(
-    pool: web::Data<Pool<Postgres>>,
-    query: web::Path<(String, String)>,
+    pool: Data<Pool<Postgres>>,
+    query: Path<(String, String)>,
     bytes: Bytes,
 ) -> actix_web::Result<impl Responder> {
     let (service_id, data_hash) = query.into_inner();
@@ -25,7 +25,10 @@ async fn add_mock_response(
         Err(err) => {
             return Ok(HttpResponse::build(StatusCode::BAD_REQUEST)
                 .content_type("application/json")
-                .json(ApiError::new(err.to_string(), CustomStatusCode::BadRequest)));
+                .json(ApiError::new(
+                    &err.to_string(),
+                    CustomStatusCode::BadRequest,
+                )));
         }
     };
     let data_to_insert = MockResponseBody {
