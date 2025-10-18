@@ -1,6 +1,6 @@
 [package]
 name = "mockservice"
-version = "1.2.4"
+version = "1.3.1"
 edition = "2024"
 authors = ["Gregory Saliba", "gregtmj@gmail.com"]
 description = "This project is meant to handle a mock service, that imitates responses from external services"
@@ -18,7 +18,10 @@ serde = "1.0.219"
 serde_json = "1.0.143"
 log = "0.4"
 env_logger = "0.11.8"
-sqlx-cli = { version = "0.8.6", features = ["postgres"] }
+
+[dev-dependencies]
+sqlx-cli = { version = "0.8.6", default-features = false, features = ["postgres"] }
+
 
 [lints.rust]
 unsafe_code = "forbid"

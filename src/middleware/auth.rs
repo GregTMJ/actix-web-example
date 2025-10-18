@@ -30,7 +30,7 @@ pub async fn extract_auth_key(
     let api_error: ApiError;
     match req.headers().get("X-Api-Key") {
         Some(val) => {
-            if val.to_owned() == system_api_key {
+            if *val == system_api_key {
                 return next.call(req).await;
             } else {
                 api_error = ApiError::new(

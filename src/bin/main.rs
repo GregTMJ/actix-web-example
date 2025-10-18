@@ -46,12 +46,12 @@ async fn main() -> io::Result<()> {
         .expect("Database connection error");
     HttpServer::new(move || {
         App::new()
-            .wrap(from_fn(extract_auth_key))
             .wrap(middleware::Logger::default())
             .app_data(web::Data::new(pool.clone()))
             .service(check_ping)
             .service(
                 web::scope("/api")
+                    .wrap(from_fn(extract_auth_key))
                     .service(get_vk_info)
                     .service(add_mock_response)
                     .service(get_equifax_v4_info)
@@ -62,7 +62,7 @@ async fn main() -> io::Result<()> {
                     .service(get_equifax_scoring_info),
             )
     })
-    .bind(("127.0.0.1", 8080))?
+    .bind(("0.0.0.0", 8080))?
     .workers(current_workers as usize)
     .run()
     .await
