@@ -19,9 +19,9 @@ impl HashGenerate for PublicInfoRequest {
             self.first_name.to_ascii_uppercase(),
             self.last_name.to_ascii_uppercase(),
             self.middle_name
-                .clone()
+                .as_deref()
                 .unwrap_or_default()
-                .to_ascii_uppercase()
+                .to_ascii_uppercase(),
         )
     }
 }

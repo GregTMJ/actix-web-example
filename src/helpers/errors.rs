@@ -15,15 +15,3 @@ pub struct ApiError {
     pub message: String,
     pub code: StatusCode,
 }
-
-impl ApiError {
-    pub fn new(
-        message: &str,
-        code: StatusCode,
-    ) -> Self {
-        Self {
-            message: message.to_owned(),
-            code,
-        }
-    }
-}

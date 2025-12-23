@@ -35,12 +35,11 @@ pub async fn fetch_mock_response(
     input_data: impl HashGenerate,
     service_id: i32,
 ) -> Result<String, HttpResponse> {
-    let data_hash = input_data.get_hash();
     let query_result = sqlx::query_as::<_, ServiceMockResponse>(
         "SELECT * FROM service_mock_responses WHERE service_id = $1 AND data_hash = $2",
     )
     .bind(service_id)
-    .bind(data_hash)
+    .bind(input_data.get_hash())
     .fetch_one(connection)
     .await;
     match query_result {
@@ -49,10 +48,10 @@ pub async fn fetch_mock_response(
             SqlError::RowNotFound => Ok(String::new()),
             _ => Err(HttpResponse::build(StatusCode::INTERNAL_SERVER_ERROR)
                 .content_type("application/json")
-                .json(ApiError::new(
-                    &error.to_string(),
-                    CustomStatusCode::DatabaseError,
-                ))),
+                .json(ApiError {
+                    message: error.to_string(),
+                    code: CustomStatusCode::DatabaseError,
+                })),
         },
     }
 }

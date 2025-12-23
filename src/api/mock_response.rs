@@ -4,6 +4,7 @@ use actix_web::{
     post,
     web::{Bytes, Data, Path},
 };
+use log::{info, warn};
 use serde_json::json;
 use sqlx::{Pool, Postgres};
 
@@ -25,21 +26,33 @@ async fn add_mock_response(
         Err(err) => {
             return Ok(HttpResponse::build(StatusCode::BAD_REQUEST)
                 .content_type("application/json")
-                .json(ApiError::new(
-                    &err.to_string(),
-                    CustomStatusCode::BadRequest,
-                )));
+                .json(ApiError {
+                    message: err.to_string(),
+                    code: CustomStatusCode::BadRequest,
+                }));
         }
     };
+    let service_id = match service_id.parse::<i32>() {
+        Ok(val) => val,
+        Err(e) => {
+            return Ok(HttpResponse::build(StatusCode::BAD_REQUEST)
+                .content_type("application/json")
+                .json(ApiError {
+                    message: e.to_string(),
+                    code: CustomStatusCode::BadRequest,
+                }));
+        }
+    };
+    info!("Inserting mock data to service {service_id}");
     let data_to_insert = MockResponseBody {
-        service_id: service_id.parse::<i32>().unwrap(),
+        service_id,
         data_hash: data_hash.to_ascii_uppercase(),
         data: input_data,
     };
     let result = match insert_mock_response(pool.get_ref(), data_to_insert).await {
         Ok(result) => result,
         Err(err) => {
-            println!("Got an error while inserting {err}");
+            warn!("mock response insertion error: {err}");
             false
         }
     };

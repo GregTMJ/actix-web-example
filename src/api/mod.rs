@@ -1,7 +1,9 @@
 use std::{env::current_dir, fs::exists, path::PathBuf};
 use tokio::fs;
 
-use actix_web::{Error, HttpResponse, error::ErrorNotFound, http::StatusCode};
+use actix_web::{
+    Error as WebError, HttpResponse, error::ErrorNotFound, http::StatusCode,
+};
 use sqlx::{Pool, Postgres};
 
 use crate::{
@@ -23,8 +25,8 @@ pub mod mock_response;
 pub mod schemas;
 pub mod vk;
 
-pub fn get_file_path(file_name: &str) -> Result<PathBuf, Error> {
-    let original_path = current_dir().unwrap().join("static").join(file_name);
+pub fn get_file_path(file_name: &str) -> Result<PathBuf, WebError> {
+    let original_path = current_dir()?.join(format!("static/{file_name}"));
     match exists(&original_path) {
         Ok(_) => Ok(original_path),
         Err(msg) => Err(ErrorNotFound(msg)),
@@ -45,9 +47,9 @@ pub async fn mock_fetch_file_response(
         Ok(content) => Ok(content),
         Err(err) => Err(HttpResponse::build(StatusCode::INTERNAL_SERVER_ERROR)
             .content_type("application/json")
-            .json(ApiError::new(
-                &err.to_string(),
-                CustomStatusCode::ErrorConflict,
-            ))),
+            .json(ApiError {
+                message: err.to_string(),
+                code: CustomStatusCode::ErrorConflict,
+            })),
     }
 }

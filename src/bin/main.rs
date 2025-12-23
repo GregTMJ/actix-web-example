@@ -26,7 +26,9 @@ async fn check_ping() -> impl Responder {
 async fn main() -> io::Result<()> {
     dotenv().ok();
     init_from_env(Env::default().default_filter_or("info"));
-    check_connection().await.unwrap();
+    check_connection()
+        .await
+        .expect("Database healthcheck error");
     let max_connections: u32 = match env::var("MAX_CONNECTIONS") {
         Ok(value) => match value.parse::<u32>() {
             Ok(value) => value,
